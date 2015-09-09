@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <base href="http://127.0.0.1:4000">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+
+    <!-- MAIN APP CSS FILES-->
+    <link href="assets/iwui-fw/dist/css/iwui.min.css" rel="stylesheet" media="screen"/>
+    <link href="assets/iwui-themes/dist/intraway/intraway.min.css" rel="stylesheet" media="screen"/>
+    <link href="assets/css/styles.css" rel="stylesheet" media="screen"/>
+    <link href="assets/css/syntax.css" rel="stylesheet" media="screen"/>
+
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default iw-navbar navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img id="brandNav" class="iw-logo" src="http://127.0.0.1:4000assets/images/iw-logo.png">
+                <a href="http://127.0.0.1:4000" class="navbar-brand">Intraway Testing Practice</a>
+            </div>
+
+            <div class="navbar-top-opts">
+                <a href="#" class="visible-xs pull-left" id="iw-aside-btn" title="Show menu">
+                    <span class="fa-stack fa-lg" alt="Fork me on Gitlab">
+                        <i class="fa fa-bars fa-stack-1x"></i>
+                    </span>
+                </a>
+                <a href="http://gitlab.intraway.com/iway_practices/testing" class="pull-right" title="Fork me on Gitlab" target="_blank">
+                    <span class="fa-stack fa-lg" alt="Fork me on Gitlab">
+                        <i class="fa fa-square-o fa-stack-2x" ></i>
+                        <i class="fa fa-code-fork fa-stack-1x"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <div class="iw-main">
+
+        <!-- ASIDE SIDEBAR -->
+        <div class="iw-aside" id="iw-aside">
+
+            <ul class="iw-menu" id="iw-menu">
+                
+                <li>
+                    <a class="#" href="index.html"><i class="fa fa-bookmark"></i> Inicio</a>
+
+                    
+
+                </li>
+                
+                <li>
+                    <a class="#" href="noticias.html"><i class="fa fa-bookmark"></i> Noticias</a>
+
+                    
+
+                </li>
+                
+                <li>
+                    <a class="#" href="#"><i class="fa fa-bookmark"></i> Introducción</a>
+
+                    
+                        <ul>
+                            
+                                <li>
+                                    <a class="#" href="#">Testing</a>
+
+                                    
+                                        <ul>
+                                            
+                                            <li>
+                                                <a class="#" href="#">Automation Docs</a>
+
+                                                
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                            <a class="#" href="introduccion/docs/automation.html">Introduction</a>
+                                                        </li>
+                                                        
+                                                        <li>
+                                                            <a class="#" href="introduccion/docs/capacitacion.html">Training</a>
+                                                        </li>
+                                                        
+                                                        <li>
+                                                            <a class="#" href="introduccion/docs/contactos.html">Contacts</a>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                
+
+                                            </li>
+                                            
+                                            <li>
+                                                <a class="#" href="#">Automation Tools</a>
+
+                                                
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                            <a class="#" href="introduccion/automation/soapui.html">SoapUi</a>
+                                                        </li>
+                                                        
+                                                        <li>
+                                                            <a class="#" href="introduccion/automation/jmeter.html">Jmeter</a>
+                                                        </li>
+                                                        
+                                                        <li>
+                                                            <a class="#" href="introduccion/automation/selenium.html">Selenium</a>
+                                                        </li>
+                                                        
+                                                        <li>
+                                                            <a class="#" href="introduccion/automation/gradle.html">Gradle</a>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                
+
+                                            </li>
+                                            
+                                        </ul>
+                                    
+                                </li>
+                            
+                        </ul>
+
+                    
+
+                </li>
+                
+            </ul>
+
+        </div>
+
+        <div class="container-fluid iw-container">
+            <section class="iw-box">
+                <h2 id="nuevo-sitio-para-la-introduccin-a-testing">Nuevo Sitio para la Introducción a Testing</h2>
+
+<p><a href="http://technology.intraway.com/practices/testing">Site Testing</a></p>
+
+
+            </section>
+
+        </div>
+    </div>
+
+    <script src="assets/iwui-fw/dist/js/jquery.min.js"></script>
+    <script src="assets/iwui-fw/dist/js/bootstrap.min.js"></script>
+    <script src="assets/iwui-fw/dist/js/iwui.min.js"></script>
+
+    <script type="text/javascript">
+
+        // PAGE RELATED SCRIPTS
+        $(document).ready(function(){
+
+            if (window.location.pathname) {
+                var pathname = '';
+                pathname = window.location.pathname;
+                $('#iw-menu a').each(function(i, el) {
+                    ahref = $(el).attr('href');
+                    ahref = '/'+ahref;
+                    if (ahref == pathname) {
+                        $(el).parent().addClass('active');
+                    }
+                });
+            }
+            var options = {
+                btnToggle: '#iw-aside-btn',
+            }
+            $("#iw-aside").iside(options);
+
+            var menuOptions = {
+                closedSign : '<em class="fa fa-angle-down"></em>',
+                openedSign : '<em class="fa fa-angle-up"></em>'
+            }
+            $("#iw-menu").iwMenu(null, menuOptions);
+        });
+
+    </script>
+
+</body>
+</html>

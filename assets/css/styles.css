@@ -1,0 +1,42 @@
+/**
+ * Styles
+ *
+ * 1. Import fonts
+ * 2. Base
+ *
+ *
+ ******************************************************/
+
+/* 1. Import fonts
+ ******************************************************/
+@import url(http://fonts.googleapis.com/css?family=Dosis:300,400,500);
+
+/* 2. Blog
+ ******************************************************/
+.post {
+    border-bottom: 1px dotted #ccc;
+    padding-top:15px;
+    padding-bottom:10px;
+}
+
+.post .post-meta {
+    color:#939393;
+}
+
+/** 3. Header
+*************************************/
+.iw-navbar .navbar-top-opts {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: 0;
+    z-index:1400;
+    width:80px;
+}
+
+.iw-navbar .navbar-top-opts a,
+.iw-navbar .navbar-top-opts a:hover,
+.iw-navbar .navbar-top-opts a:link,
+.iw-navbar .navbar-top-opts a:active {
+    color:#fff;
+}

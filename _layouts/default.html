@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <base href="{{ site.url }}">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }}</title>
+
+    <!-- MAIN APP CSS FILES-->
+    <link href="assets/iwui-fw/dist/css/iwui.min.css" rel="stylesheet" media="screen"/>
+    <link href="assets/iwui-themes/dist/intraway/intraway.min.css" rel="stylesheet" media="screen"/>
+    <link href="assets/css/styles.css" rel="stylesheet" media="screen"/>
+    <link href="assets/css/syntax.css" rel="stylesheet" media="screen"/>
+
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default iw-navbar navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img id="brandNav" class="iw-logo" src="{{ site.url }}assets/images/iw-logo.png">
+                <a href="{{ site.url }}" class="navbar-brand">{{ site.layout.title }}</a>
+            </div>
+
+            <div class="navbar-top-opts">
+                <a href="#" class="visible-xs pull-left" id="iw-aside-btn" title="Show menu">
+                    <span class="fa-stack fa-lg" alt="Fork me on Gitlab">
+                        <i class="fa fa-bars fa-stack-1x"></i>
+                    </span>
+                </a>
+                <a href="{{ site.layout.url_gitlab }}" class="pull-right" title="Fork me on Gitlab" target="_blank">
+                    <span class="fa-stack fa-lg" alt="Fork me on Gitlab">
+                        <i class="fa fa-square-o fa-stack-2x" ></i>
+                        <i class="fa fa-code-fork fa-stack-1x"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <div class="iw-main">
+
+        <!-- ASIDE SIDEBAR -->
+        <div class="iw-aside" id="iw-aside">
+
+            <ul class="iw-menu" id="iw-menu">
+                {% for section in site.data.menu %}
+                <li>
+                    <a class="#" href="{{ section[1].link }}"><i class="fa fa-bookmark"></i> {{ section[0] }}</a>
+
+                    {% if section[1].submenu %}
+                        <ul>
+                            {% for sub1 in section[1].submenu %}
+                                <li>
+                                    <a class="#" href="{{ sub1[1].link }}">{{ sub1[0] }}</a>
+
+                                    {% if sub1[1].submenu %}
+                                        <ul>
+                                            {% for sub2 in sub1[1].submenu %}
+                                            <li>
+                                                <a class="#" href="{{ sub2[1].link }}">{{ sub2[0] }}</a>
+
+                                                {% if sub2[1].submenu %}
+                                                    <ul>
+                                                        {% for sub3 in sub2[1].submenu %}
+                                                        <li>
+                                                            <a class="#" href="{{ sub3[1].link }}">{{ sub3[0] }}</a>
+                                                        </li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                {% endif%}
+
+                                            </li>
+                                            {% endfor %}
+                                        </ul>
+                                    {% endif%}
+                                </li>
+                            {% endfor %}
+                        </ul>
+
+                    {% endif %}
+
+                </li>
+                {% endfor %}
+            </ul>
+
+        </div>
+
+        <div class="container-fluid iw-container">
+            <section class="iw-box">
+                {{ content }}
+            </section>
+
+        </div>
+    </div>
+
+    <script src="assets/iwui-fw/dist/js/jquery.min.js"></script>
+    <script src="assets/iwui-fw/dist/js/bootstrap.min.js"></script>
+    <script src="assets/iwui-fw/dist/js/iwui.min.js"></script>
+
+    <script type="text/javascript">
+
+        // PAGE RELATED SCRIPTS
+        $(document).ready(function(){
+
+            if (window.location.pathname) {
+                var pathname = '';
+                pathname = window.location.pathname;
+                $('#iw-menu a').each(function(i, el) {
+                    ahref = $(el).attr('href');
+                    ahref = '/{{ site.basepath }}'+ahref;
+                    if (ahref == pathname) {
+                        $(el).parent().addClass('active');
+                    }
+                });
+            }
+            var options = {
+                btnToggle: '#iw-aside-btn',
+            }
+            $("#iw-aside").iside(options);
+
+            var menuOptions = {
+                closedSign : '<em class="fa fa-angle-down"></em>',
+                openedSign : '<em class="fa fa-angle-up"></em>'
+            }
+            $("#iw-menu").iwMenu(null, menuOptions);
+        });
+
+    </script>
+
+</body>
+</html>

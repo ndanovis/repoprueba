@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <base href="http://127.0.0.1:4000">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automation Doc</title>
+
+    <!-- MAIN APP CSS FILES-->
+    <link href="assets/iwui-fw/dist/css/iwui.min.css" rel="stylesheet" media="screen"/>
+    <link href="assets/iwui-themes/dist/intraway/intraway.min.css" rel="stylesheet" media="screen"/>
+    <link href="assets/css/styles.css" rel="stylesheet" media="screen"/>
+    <link href="assets/css/syntax.css" rel="stylesheet" media="screen"/>
+
+
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-default iw-navbar navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <img id="brandNav" class="iw-logo" src="http://127.0.0.1:4000assets/images/iw-logo.png">
+                <a href="http://127.0.0.1:4000" class="navbar-brand">Intraway Testing Practice</a>
+            </div>
+
+            <div class="navbar-top-opts">
+                <a href="#" class="visible-xs pull-left" id="iw-aside-btn" title="Show menu">
+                    <span class="fa-stack fa-lg" alt="Fork me on Gitlab">
+                        <i class="fa fa-bars fa-stack-1x"></i>
+                    </span>
+                </a>
+                <a href="http://gitlab.intraway.com/iway_practices/testing" class="pull-right" title="Fork me on Gitlab" target="_blank">
+                    <span class="fa-stack fa-lg" alt="Fork me on Gitlab">
+                        <i class="fa fa-square-o fa-stack-2x" ></i>
+                        <i class="fa fa-code-fork fa-stack-1x"></i>
+                    </span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <div class="iw-main">
+
+        <!-- ASIDE SIDEBAR -->
+        <div class="iw-aside" id="iw-aside">
+
+            <ul class="iw-menu" id="iw-menu">
+                
+                <li>
+                    <a class="#" href="index.html"><i class="fa fa-bookmark"></i> Inicio</a>
+
+                    
+
+                </li>
+                
+                <li>
+                    <a class="#" href="noticias.html"><i class="fa fa-bookmark"></i> Noticias</a>
+
+                    
+
+                </li>
+                
+                <li>
+                    <a class="#" href="#"><i class="fa fa-bookmark"></i> Introducción</a>
+
+                    
+                        <ul>
+                            
+                                <li>
+                                    <a class="#" href="#">Testing</a>
+
+                                    
+                                        <ul>
+                                            
+                                            <li>
+                                                <a class="#" href="#">Automation Docs</a>
+
+                                                
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                            <a class="#" href="introduccion/docs/automation.html">Introduction</a>
+                                                        </li>
+                                                        
+                                                        <li>
+                                                            <a class="#" href="introduccion/docs/capacitacion.html">Training</a>
+                                                        </li>
+                                                        
+                                                        <li>
+                                                            <a class="#" href="introduccion/docs/contactos.html">Contacts</a>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                
+
+                                            </li>
+                                            
+                                            <li>
+                                                <a class="#" href="#">Automation Tools</a>
+
+                                                
+                                                    <ul>
+                                                        
+                                                        <li>
+                                                            <a class="#" href="introduccion/automation/soapui.html">SoapUi</a>
+                                                        </li>
+                                                        
+                                                        <li>
+                                                            <a class="#" href="introduccion/automation/jmeter.html">Jmeter</a>
+                                                        </li>
+                                                        
+                                                        <li>
+                                                            <a class="#" href="introduccion/automation/selenium.html">Selenium</a>
+                                                        </li>
+                                                        
+                                                        <li>
+                                                            <a class="#" href="introduccion/automation/gradle.html">Gradle</a>
+                                                        </li>
+                                                        
+                                                    </ul>
+                                                
+
+                                            </li>
+                                            
+                                        </ul>
+                                    
+                                </li>
+                            
+                        </ul>
+
+                    
+
+                </li>
+                
+            </ul>
+
+        </div>
+
+        <div class="container-fluid iw-container">
+            <section class="iw-box">
+                <h1 id="i-classi-automation-docs"><i class=""></i> Automation Docs</h1>
+<hr />
+
+<p><strong class="text-info"> <i class="glyphicon glyphicon-exclamation-sign"></i> IMPORTANT: </strong>
+Automation
+&lt;/blockquote&gt;</p>
+
+<h2 id="i-classi-content"><i class=""></i> Content</h2>
+
+<ol>
+  <li>Automation
+    <ol>
+      <li><a href="introduccion/automation.html#1-1">What is automation?</a></li>
+      <li><a href="introduccion/automation.html#1-2">Goals</a></li>
+      <li><a href="introduccion/automation.html#1-3">How do we do it?</a></li>
+      <li><a href="introduccion/automation.html#1-4">How much to automate</a></li>
+      <li><a href="introduccion/automation.html#1-5">Where are we going?</a></li>
+      <li><a href="introduccion/automation.html#1-6">Why automation?</a></li>
+    </ol>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="what-is-automation">1.1 What is automation?</h2>
+
+<p>Test automation is the use of special software (separate from the software being tested) to control the execution of tests and the comparison of actual outcomes with predicted outcomes.Test automation can automate some repetitive but necessary tasks in a formalized testing process already in place, or add additional testing that would be difficult to perform manually.
+Some software testing tasks, such as extensive low-level interface regression testing, can be laborious and time consuming to do manually. Once automated tests have been developed, they can be run quickly and repeatedly. Many times, this can be a cost-effective method for regression testing of software products that have a long maintenance life. 
+Test automation can be made cost-effective in the long term, especially when used repeatedly in regression testing.
+What to automate, when to automate, or even whether one really needs automation are crucial decisions which the testing (or development) team must make. Selecting the correct features of the product for automation largely determines the success of the automation. Automating unstable features or features that are undergoing changes should be avoided.</p>
+
+<p>Stress, load, stability, and performance testing peaks</p>
+
+<p>Different types of “technical” tests are: performance test, stress test and load test. The difference is not trivial and at the same time, they have points in common:</p>
+
+<p>Load test: tests to determine and validate the application response when subjected to a load of users and / or transactions that are expected in the production environment. Example: check the correct application response to the high of 100 users simultaneously. That compares with the expected volume.</p>
+
+<p>Performance test: these tests are done to measure the response of the application to different volumes of expected load (number of users and / or requests). Example: when processing response speed entry of 10, 100 and 1000 users simultaneously. They buy with the expected return.</p>
+
+<p>Stress test: test to find the volume of data or time the application starts to fail or are unable to respond to requests. They are load testing or performance, but beyond the limits expected in the production environment and / or determined by testing. Example: find the number of concurrent users, the application stops responding (hang or time out) properly to all requests.</p>
+
+<p>All tests seek to find bottlenecks differently. All can be done with the same tools, varying the parameters.</p>
+
+<p>Stability test: is a test run for more than 24 hours (eg weekend) and which mainly seek such anomalies as memory loss;</p>
+
+<p>Peak test: is one where we go beyond the maximum design capacity, just to see how the application will bear a huge burden. In general, you’ll be a domino effect, but what we are looking for is that the application does not fall.</p>
+
+<p><img src="assets/images/automation.png" alt="SoapUi Logo" class="img-responsive pull-left" style="border: 0; margin-top:5px;" /> Diagram - Process Automation</p>
+
+<p><a id="1-1"></a></p>
+
+<hr />
+
+<h2 id="goals">1.2 Goals</h2>
+
+<hr />
+
+<p>The objective of automated testing is to simplify as much of the testing effort as possible with a minimum set of scripts. If unit testing consumes a large percentage of a quality assurance (QA) team’s resources, for example, then this process might be a good candidate for automation. Automated testing tools are capable of executing tests, reporting outcomes and comparing results with earlier test runs. Tests carried out with these tools can be run repeatedly, at any time of day.
+The method or process being used to implement automation is called a test automation framework. Several frameworks have been implemented over the years by commercial vendors and testing organizations. Automating tests with commercial off-the-shelf (COTS) or open source software can be complicated, however, because they almost always require customization.</p>
+
+<p><a id="1-2"></a></p>
+
+<hr />
+
+<h2 id="how-do-we-do-it">1.3 How do we do it?</h2>
+<p>How to implement a test automation program breaks down into people, Assess the people, process, technology and success of the current testing process Identify systemic root-cause issues preventing testing success. 
+From a process perspective, the testing group and the program as a whole will need to determine how test automation will fit into the system development process – the initial focus should be on high-yield automation activities that free-up manual testers (full-time equivalents). 
+Any test automation program should start with an honest assessment of the people, process and available technologies. Based on this assessment, and if justified, based on the responses to an RFP (request for proposal), one or more POC (proof-of-concept) initiatives should be launched to determine which process and technology best fits your short-term and long-term needs.</p>
+
+<p><a id="1-3"></a></p>
+
+<hr />
+
+<h2 id="how-much-to-automate">1.4 How much to automate</h2>
+
+<p>How much of your application space should be automated is dependent on the key program factors we have previously discussed. There are some basic guidelines that should always be considered:
+Never automate the entire testing process – skilled exploratory testing will always yield defects that will not be detected through test automation.
+Test automation is a tool not a solution – if it is not applied with intelligence and skill, the net result will be “really fast” ineffective testing.
+If the goal is to significantly increase deployment velocity or ensure quality objectives are being met – then a significant percentage of existing functionality should be automated. On the other hand, if the objective is to reduce the weight of the overall testing effort on the test group, the focus should be on high-yield automation activities:</p>
+
+<p>test data creation
+smoke test
+regression test</p>
+
+<p>It is important to be aware that complete coverage of all tests using test automation is unrealistic. When deciding what tests to automate first, their value vs. the effort to create them needs to be considered. Test cases with high value and low effort should be automated first. Subsequently test cases with frequent use, changes, and past errors; as well as test cases with low to moderate effort in setting up the test environment and developing the automation project are best suited for automation.
+Optimization of Speed, Efficiency, Quality and the Decrease of Costs Test automation alleviates testers’ frustrations and allows the test execution without user interaction while guaranteeing repeatability and accuracy. Instead testers can now concentrate on more difficult test scenarios.
+Increase of Test Coverage</p>
+
+<p>Sufficient test coverage of software projects is often achieved only with great effort. Frequent repetition of the same or similar test cases is laborious and time consuming to perform manually. Some examples are:</p>
+
+<p>Regression test after debugging or further development of software
+Testing of software on different platforms or with different configurations
+Data-driven testing (creation of tests using the same actions but with many different inputs).</p>
+
+<p><a id="1-4"></a></p>
+
+<hr />
+
+<h2 id="where-are-we-going">1.5 Where are we going?</h2>
+
+<p>We focus on the adaptability of testing techniques that can be applied to almost any project that requires testing.
+New techniques or methodologies can modify or reorganize the way that professional testers carry out their daily tasks, but they must be able to handle and adapt expanding their knowledge and skills as professionals, or become specialists in one area test determined as nonfunctional. The future of test automation needs open to use multiple tools and Quick Tools not expect to solve everything because it will not come mentality. So far it has proved impossible to achieve a single automation method, so you have to choose the tool that best suits each problem or needs.
+Some areas of future development that must also be adapted tests and testers.</p>
+
+<p><a id="1-5"></a></p>
+
+<hr />
+
+<h2 id="why-automation">1.6 Why automation?</h2>
+<p>Benefits and results
+- Coverage of test cases
+- Reuse of test cases
+- Focus on the business
+- Process efficiency test
+- Improvement in execution times
+- Improvement in delivery times</p>
+
+<p>results
+- Shorter test project
+- Optimization of resources
+- Increase the coverage of test cases
+- Improvement in time management</p>
+
+<p>Automated test equipment
+- Dedicated test equipment
+- Enlist the support of other areas of the company
+- Matches skills with the responsibilities of the role
+  - Profile more technical
+- Authority to carry out its responsibilities
+- Equipment
+  Team leader
+  Developers test
+  Developers cases
+  Test bliblioteca
+  Client liaison
+  Link development
+  Link systems</p>
+
+<p><a id="1-6"></a></p>
+
+<hr />
+
+
+            </section>
+
+        </div>
+    </div>
+
+    <script src="assets/iwui-fw/dist/js/jquery.min.js"></script>
+    <script src="assets/iwui-fw/dist/js/bootstrap.min.js"></script>
+    <script src="assets/iwui-fw/dist/js/iwui.min.js"></script>
+
+    <script type="text/javascript">
+
+        // PAGE RELATED SCRIPTS
+        $(document).ready(function(){
+
+            if (window.location.pathname) {
+                var pathname = '';
+                pathname = window.location.pathname;
+                $('#iw-menu a').each(function(i, el) {
+                    ahref = $(el).attr('href');
+                    ahref = '/'+ahref;
+                    if (ahref == pathname) {
+                        $(el).parent().addClass('active');
+                    }
+                });
+            }
+            var options = {
+                btnToggle: '#iw-aside-btn',
+            }
+            $("#iw-aside").iside(options);
+
+            var menuOptions = {
+                closedSign : '<em class="fa fa-angle-down"></em>',
+                openedSign : '<em class="fa fa-angle-up"></em>'
+            }
+            $("#iw-menu").iwMenu(null, menuOptions);
+        });
+
+    </script>
+
+</body>
+</html>

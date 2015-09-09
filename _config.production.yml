@@ -1,0 +1,27 @@
+# Production configuration
+encoding: "utf-8"
+timezone: "America/Argentina/Buenos_Aires"
+
+basepath: "practices/testing/"
+url: http://technology.intraway.com/practices/testing/
+
+markdown:    "kramdown"
+highlighter: "pygments"
+lsi:         "false"
+
+# configuración para el layout
+layout:
+    title: 'Intraway Testing Practice'
+    url_gitlab: 'http://gitlab.intraway.com/iway_practices/testing'
+
+# enable analitics
+analitics: true
+
+# configuraciones grales para todas las páginas
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      layout: "default"
+      title: "Intraway Testing Practice"

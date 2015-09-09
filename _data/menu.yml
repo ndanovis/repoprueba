@@ -1,0 +1,30 @@
+Inicio:
+    link: 'index.html'
+Noticias:
+    link: 'noticias.html'
+Introducción:
+    link: '#'
+    submenu:
+        Testing:
+            link: '#'
+            submenu:
+                Automation Docs:
+                    link: '#'
+                    submenu:
+                        Introduction:  
+                             link: 'introduccion/docs/automation.html'
+                        Training:
+                             link: 'introduccion/docs/capacitacion.html'
+                        Contacts:       
+                             link: 'introduccion/docs/contactos.html'
+                Automation Tools:
+                    link: '#'
+                    submenu:
+                        SoapUi:
+                            link: 'introduccion/automation/soapui.html'
+                        Jmeter:
+                            link: 'introduccion/automation/jmeter.html'
+                        Selenium:
+                            link: 'introduccion/automation/selenium.html'    
+                        Gradle:
+                            link: 'introduccion/automation/gradle.html' 

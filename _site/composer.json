@@ -1,0 +1,32 @@
+{
+    "name": "iway_practices/testing",
+    "description": "Intraway Testing Practice",
+    "type": "library",
+    "license": "Intraway",
+    "version": "1.2.1",
+    "keywords": [],
+    "homepage": "http://gitlab.intraway.com/iway_practices/testing",
+    "authors": [
+        {
+            "name": "Ezequiel Marquez",
+            "email": "ezequiel.marquez@intraway.com"
+        }
+    ],
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "http://packages.intraway.com"
+        }
+    ],
+    "require": {
+        "iwui/iwui-fw": "1.0.*",
+        "iwui/iwui-themes": "1.0.*",
+        "iway_components/composerinstallers": "2.0.*"
+    },
+    "extra": {
+        "class": "Intraway\\Components\\ComposerInstallers\\Installer",
+        "installer-paths": {
+            "assets/{$name}/": ["iwui/iwui-fw", "iwui/iwui-themes"]
+        }
+    }
+}

@@ -1,0 +1,29 @@
+# Dev configuration
+encoding: "utf-8"
+timezone: "America/Argentina/Buenos_Aires"
+
+host:    "0.0.0.0"
+#port: "4000"
+basepath: ""
+url: http://127.0.0.1:4000
+
+markdown:    "kramdown"
+highlighter: "pygments"
+lsi:         "false"
+
+# configuración para el layout
+layout:
+    title: 'Intraway Testing Practice'
+    url_gitlab: 'http://gitlab.intraway.com/iway_practices/testing'
+
+# enable analitics
+analitics: false
+
+# configuraciones grales para todas las páginas
+defaults:
+  -
+    scope:
+      path: "" # empty string for all files
+    values:
+      layout: "default"
+      title: "Intraway Testing Practice"
